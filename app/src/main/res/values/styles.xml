@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="let_s_get_s">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontWeight">800</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="height">75sp</item>
+        <item name="android:textStyle">bold</item>
+
+        <item name="android:lineSpacingMultiplier">0.8</item>
+    </style>
+
+
+    <style name="grow_togeth">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="joın_now_button">
+        <item name="android:textSize">30sp</item>
+        <item name="fontFamily">@font/inder</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="backgroundTint">#000000</item>
+
+    </style>
+
+
+</resources>

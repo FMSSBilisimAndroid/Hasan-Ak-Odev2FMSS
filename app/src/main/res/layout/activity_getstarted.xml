@@ -34,8 +34,10 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="214dp"
             android:layout_marginTop="147dp"
+            android:layout_marginEnd="-246dp"
             android:layout_marginBottom="319dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ellipse_1" />
@@ -133,7 +135,7 @@
 
         <Button
             android:id="@+id/rectangle_1"
-            style="@style/joın_now_button"
+            style="@style/button_style"
             android:layout_width="281dp"
             android:layout_height="62dp"
             android:layout_alignParentStart="true"
@@ -141,8 +143,8 @@
             android:layout_marginTop="630dp"
             android:gravity="center"
             android:text="@string/joın_now"
+            android:onClick="joinNowClick"
             app:layout_constraintBottom_toBottomOf="parent"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

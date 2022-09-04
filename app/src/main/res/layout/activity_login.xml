@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+        <ImageButton
+            android:id="@+id/backButtonImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back_button"
+            android:onClick="backButton1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcome_bac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="54dp"
+            android:fontFamily="@font/inter_extrabold"
+            android:gravity="center_horizontal"
+            android:lineHeight="39sp"
+            android:text="@string/welcome_bac"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backButtonImageView" />
+
+        <TextView
+            android:id="@+id/enter_your_"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="38dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:lineHeight="22sp"
+            android:text="@string/enter_your_"
+            android:textColor="#565656"
+            android:textSize="18sp"
+
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_bac" />
+
+        <ImageView
+            android:id="@+id/union"
+            android:layout_width="643dp"
+            android:layout_height="713dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-215dp"
+            android:layout_marginTop="269dp"
+            android:background="@drawable/ellipse_2"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/userNameInput"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="140dp"
+            android:hint="@string/username"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enter_your_" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="67dp"
+            android:hint="@string/password"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameInput" />
+
+        <Button
+            android:id="@+id/loginButton"
+            style="@style/button_style"
+            android:layout_width="229dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="@string/logın"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
+        <TextView
+            android:id="@+id/forgotten_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:text="@string/forgotten_p"
+            android:textSize="15sp"
+            android:fontFamily="@font/inter"
+            android:textColor="#6B6B6B"
+            app:layout_constraintEnd_toEndOf="@id/loginButton"
+            app:layout_constraintStart_toStartOf="@id/loginButton"
+            app:layout_constraintTop_toBottomOf="@+id/loginButton"
+
+            />
+        <TextView
+            android:id="@+id/or_create_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:text="@string/or_create_a"
+            android:textSize="15sp"
+            android:fontFamily="@font/inter"
+            android:textColor="#6B6B6B"
+            android:lineHeight="18sp"
+            android:onClick="newAccount"
+            app:layout_constraintEnd_toEndOf="@id/forgotten_p"
+            app:layout_constraintStart_toStartOf="@id/forgotten_p"
+            app:layout_constraintTop_toBottomOf="@+id/forgotten_p"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

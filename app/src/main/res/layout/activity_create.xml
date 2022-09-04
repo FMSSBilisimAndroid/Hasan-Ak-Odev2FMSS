@@ -152,7 +152,7 @@
             app:layout_constraintEnd_toEndOf="@+id/createPasswordNameText"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/createPasswordNameText"
-
+            app:endIconMode="password_toggle"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -160,7 +160,8 @@
                 android:layout_width="349dp"
                 android:layout_height="wrap_content"
                 style="@style/text_field_font"
-                android:background="@android:color/transparent" />
+                android:background="@android:color/transparent"
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -175,6 +176,7 @@
             android:layout_marginTop="60dp"
             android:text="@string/sign_up"
             android:textAllCaps="false"
+            android:onClick="signUp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textField5" />

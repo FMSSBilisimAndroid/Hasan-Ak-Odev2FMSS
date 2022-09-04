@@ -12,7 +12,7 @@ class CreateActivity : AppCompatActivity() {
     }
 
     fun backButton2(view: View) {
-       val intent = Intent(this,LoginActivity::class.java)
+       val intent = Intent(this@CreateActivity,LoginActivity::class.java)
        startActivity(intent)
     }
 }

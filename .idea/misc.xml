@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/color_cursor.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/deneme.xml" value="0.3155" />
         <entry key="app/src/main/res/drawable/ellipse.xml" value="0.25" />
         <entry key="app/src/main/res/drawable/ellipse_1.xml" value="0.1985" />
@@ -21,9 +22,9 @@
         <entry key="app/src/main/res/layout-v31/activity_login.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/layout-w428dp-h926dp/activity_main.xml" value="0.30867892261650276" />
         <entry key="app/src/main/res/layout-xxxhdpi/activity_main.xml" value="0.2738998482549317" />
-        <entry key="app/src/main/res/layout/activity_create.xml" value="0.2601851851851852" />
+        <entry key="app/src/main/res/layout/activity_create.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_getstarted.xml" value="0.3026315789473684" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2601851851851852" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.37604166666666666" />
       </map>
     </option>

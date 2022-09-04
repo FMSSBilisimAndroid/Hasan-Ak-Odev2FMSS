@@ -27,21 +27,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/ellipse_2"
             android:layout_width="460dp"
             android:layout_height="460dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="-32dp"
             android:layout_marginTop="522dp"
             android:layout_marginBottom="-80dp"
-            android:layout_marginStart="-32dp"
             android:background="@drawable/ellipse_2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <ImageButton
@@ -107,18 +107,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/enter_your_" />
 
-
-        <EditText
-            android:id="@+id/userNameInput"
-            android:layout_width="349dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            style="@style/text_field"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="29dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="-15dp"
             app:layout_constraintEnd_toEndOf="@+id/userNameText"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userNameText" />
+            app:layout_constraintTop_toBottomOf="@+id/userNameText"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userNameInput"
+                style="@style/text_field_font"
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/passwordNameText"
@@ -127,25 +135,33 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="43dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:text="@string/password"
             android:textColor="#6B6B6B"
             android:textSize="26sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/userNameInput" />
+            app:layout_constraintTop_toBottomOf="@id/textField" />
 
-
-        <EditText
-            android:id="@+id/passwordNameInput"
-            android:layout_width="349dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField2"
+            style="@style/text_field"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="29dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="-15dp"
             app:layout_constraintEnd_toEndOf="@+id/passwordNameText"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/passwordNameText" />
+            app:layout_constraintTop_toBottomOf="@+id/passwordNameText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordNameInput"
+                style="@style/text_field_font"
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/loginButton"
@@ -159,7 +175,7 @@
             android:text="@string/logın"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/passwordNameInput" />
+            app:layout_constraintTop_toBottomOf="@+id/textField2" />
 
         <TextView
             android:id="@+id/forgotten_p"
@@ -175,9 +191,7 @@
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@id/loginButton"
             app:layout_constraintStart_toStartOf="@id/loginButton"
-            app:layout_constraintTop_toBottomOf="@+id/loginButton"
-
-            />
+            app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
         <TextView
             android:id="@+id/or_create_a"
@@ -195,9 +209,7 @@
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@id/forgotten_p"
             app:layout_constraintStart_toStartOf="@id/forgotten_p"
-            app:layout_constraintTop_toBottomOf="@+id/forgotten_p"
-
-            />
+            app:layout_constraintTop_toBottomOf="@+id/forgotten_p" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
